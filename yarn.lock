@@ -2817,7 +2817,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"asap@npm:~2.0.6":
+"asap@npm:~2.0.3, asap@npm:~2.0.6":
   version: 2.0.6
   resolution: "asap@npm:2.0.6"
   checksum: 3d314f8c598b625a98347bacdba609d4c889c616ca5d8ea65acaae8050ab8b7aa6630df2cfe9856c20b260b432adf2ee7a65a1021f268ef70408c70f809e3a39
@@ -2958,6 +2958,15 @@ __metadata:
   version: 1.9.1
   resolution: "aws4@npm:1.9.1"
   checksum: d59822631844f9da1caf966cfab90ffafa22cc6c50835f9f5ebff83acdbcffc24eca44fa50d4aa191a6cee81747df38b9880547cc1df8a1380c80dd507b8e6ce
+  languageName: node
+  linkType: hard
+
+"axios@npm:>=0.11.1 <2":
+  version: 0.19.2
+  resolution: "axios@npm:0.19.2"
+  dependencies:
+    follow-redirects: 1.5.10
+  checksum: bad346deea24050f9953ce09bb8015f85a99a7b8f016806adccfab0b8981827d1fbee9c77c0ef7c70cc48392c1af6bbc65e07c3e88221d17282d2d5fd0a191f6
   languageName: node
   linkType: hard
 
@@ -3791,6 +3800,17 @@ __metadata:
     inherits: ^2.0.1
     safe-buffer: ^5.0.1
   checksum: ec80001ec91dbb7c5c08facc00ffc9c75fed7abd6d720c7a9c62c260aa2e5cb2655c183e011b50b8b711f755b1753c7fdd2ca44c091ee78d81c377ca74ed83c9
+  languageName: node
+  linkType: hard
+
+"clarifai@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "clarifai@npm:2.9.1"
+  dependencies:
+    axios: ">=0.11.1 <2"
+    promise: ^7.1.1
+    valid-url: ^1.0.9
+  checksum: 9dd89f586e7e702d6d8153ed6f0687382299ea0aa378c38c6781b13fed17290a8865fcf8f48ce71f4a90739b5ea309d7570318afcc92982bfe52827515b35ede
   languageName: node
   linkType: hard
 
@@ -4653,6 +4673,15 @@ __metadata:
   dependencies:
     ms: 2.0.0
   checksum: 559f44f98cf25e2ee489022aec173afbff746564cb108c4493becb95bc3c017a67bdaa25a0ff64801fd32c35051d00af0e56cc7f762ae2c3bc089496e5a1c31b
+  languageName: node
+  linkType: hard
+
+"debug@npm:=3.1.0":
+  version: 3.1.0
+  resolution: "debug@npm:3.1.0"
+  dependencies:
+    ms: 2.0.0
+  checksum: 1295acd5e0531761255661d325cd0a80ac8c5f6de8942a53bb23c2197ccb97526972de662ed0e5d9393be83f3428a298a6e7185ecb02f0da6282019cd2ffb4a8
   languageName: node
   linkType: hard
 
@@ -5802,9 +5831,13 @@ __metadata:
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
+    clarifai: ^2.9.1
     react: ^16.13.1
     react-dom: ^16.13.1
+    react-particles-js: ^3.2.1
     react-scripts: 3.4.1
+    react-tilt: ^0.1.4
+    tachyons: ^4.12.0
   languageName: unknown
   linkType: soft
 
@@ -6060,6 +6093,15 @@ __metadata:
     inherits: ^2.0.3
     readable-stream: ^2.3.6
   checksum: b8fa1fbfadd5c4b6df3cf2c34b3c408fe508a2899c536bafa339f679de545689997e907bd4ff61dd292942f8044fb2f293a5956dd8b601f6a5601617842d0dda
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:1.5.10":
+  version: 1.5.10
+  resolution: "follow-redirects@npm:1.5.10"
+  dependencies:
+    debug: =3.1.0
+  checksum: 6e58e02c31337b6b41ffc3d5f3d49920b7db428eddcf374537da00ef121fe473983e12d8557f4304287604168d3efcc288d1f009abaf4c9d61e5db0c0cee3c4a
   languageName: node
   linkType: hard
 
@@ -10096,6 +10138,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"pathseg@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "pathseg@npm:1.2.0"
+  checksum: 30eff04be62903c71c7f4771f690f0fb250c8cd2e6a643fb92c3974e6066f11c4594594e40e65a3d059b5ba72d5410224a88bb5338fd48c024d067b35c7998a6
+  languageName: node
+  linkType: hard
+
 "pbkdf2@npm:^3.0.3":
   version: 3.0.17
   resolution: "pbkdf2@npm:3.0.17"
@@ -11151,6 +11200,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"promise@npm:^7.1.1":
+  version: 7.3.1
+  resolution: "promise@npm:7.3.1"
+  dependencies:
+    asap: ~2.0.3
+  checksum: 23267a4b078fcb02c57b06ca1a1d5739109deb0932c0fd79615a2c5636dd0571ac6a161f19c4ea9683a4ab89791da13112678fa410b65334de490e97c33410ae
+  languageName: node
+  linkType: hard
+
 "promise@npm:^8.0.3":
   version: 8.1.0
   resolution: "promise@npm:8.1.0"
@@ -11458,6 +11516,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-particles-js@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "react-particles-js@npm:3.2.1"
+  dependencies:
+    lodash: ^4.17.11
+    tsparticles: ^1.13.6
+  peerDependencies:
+    react: ^16.0.0
+  checksum: 18c47a56aee320afce3a42cb978dc30fd2c57ca77cc35cfa0a6187e57d078793429f899a8df41c22289f1ee6ff25fc3908bc6cd8c597350a3d03970fd7772bc2
+  languageName: node
+  linkType: hard
+
 "react-scripts@npm:3.4.1":
   version: 3.4.1
   resolution: "react-scripts@npm:3.4.1"
@@ -11526,6 +11596,16 @@ fsevents@^1.2.7:
   bin:
     react-scripts: ./bin/react-scripts.js
   checksum: 417fc7cfb3c7b632f8286e02febf2301ae4a4bc25299a9ef8662c777dcaef8de9d7f2320cd7491bf796674fa1de7d86fdb9e9a2852266167e19085dd78b15f79
+  languageName: node
+  linkType: hard
+
+"react-tilt@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "react-tilt@npm:0.1.4"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+  checksum: fe08aa4757e516c67ecf3ad10195d711844fb4450426d9388e8be88da3787ce26e1d4b947029648e293539a19ec0b615a3fbd1d5b013bfae382dff6931178515
   languageName: node
   linkType: hard
 
@@ -13163,6 +13243,13 @@ resolve@1.15.0:
   languageName: node
   linkType: hard
 
+"tachyons@npm:^4.12.0":
+  version: 4.12.0
+  resolution: "tachyons@npm:4.12.0"
+  checksum: 3445cdaa2a6d1bb98e5d3377ef925b16551dca3fee209f579201c51edb325a06ecff44d7db5a5a2b19da3949ff3ff2ef016ec6c7639468549b763a250bb8362f
+  languageName: node
+  linkType: hard
+
 "tapable@npm:^1.0.0, tapable@npm:^1.1.3":
   version: 1.1.3
   resolution: "tapable@npm:1.1.3"
@@ -13428,6 +13515,23 @@ resolve@1.15.0:
   version: 1.11.1
   resolution: "tslib@npm:1.11.1"
   checksum: d40eba08de267b2d3c458ddbf51f9010a45b8e752d3bf8c0fed63e266afc9277c6a26e65e51223335b8753f9f106aeb600e704f2a6eae05729160671a97c52e7
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "tslib@npm:2.0.0"
+  checksum: a7369a224f12e223fb42f2a720389601a24a1e1c96c55bf0d8d4b60c131e574c175ae23578b8d1bd3f4ec790c7e0a82b43733f022f866d48a23aeadd3910755d
+  languageName: node
+  linkType: hard
+
+"tsparticles@npm:^1.13.6":
+  version: 1.15.1
+  resolution: "tsparticles@npm:1.15.1"
+  dependencies:
+    pathseg: ^1.2.0
+    tslib: ^2.0.0
+  checksum: a8917a2f9b69aa732c33a3429abdba81ad1eff350ca2a351671c5e3552bf1aa52ab6176183ae1d325e2edfb2b2eca4864b6188ddfefea0db2f49ec85eacc43b1
   languageName: node
   linkType: hard
 
@@ -13766,6 +13870,13 @@ resolve@1.15.0:
   version: 2.1.0
   resolution: "v8-compile-cache@npm:2.1.0"
   checksum: b7490d548401f6f4cadeb94da33b2d65473fb931e1f7c28fba02889c19adf1cfff884fb933c6282fc7e82e400f35eddc9d8fc577fa1e4998cc3797c4aaf6246c
+  languageName: node
+  linkType: hard
+
+"valid-url@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "valid-url@npm:1.0.9"
+  checksum: 988964543cb297c1d953dbf665de06cc8c46791eaf5ef3bb32b03b103c53dced7dfaa8f19863255126cbd75049a67f19415d9e647b603b759922284ccc48e776
   languageName: node
   linkType: hard
 
